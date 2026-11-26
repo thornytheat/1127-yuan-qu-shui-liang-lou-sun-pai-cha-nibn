@@ -89,6 +89,31 @@ function renderRows() {
     renderTable(byId('rows'), visible, active.columns, openRecord);
 }
 
+const HANDOFF_COLUMNS = {
+    meter: '水表', sector: '分区', grade: '本期分级', ticket: '回执工单',
+    handoff_state: '交班裁决', recheck_night: '复测夜窗', reason: '裁决依据',
+};
+
+function renderHandoff() {
+    const packet = active.handoff;
+    if (!packet) return;
+    const target = byId('handoff');
+    const count = byId('handoff-count');
+    const summary = packet.summary;
+    count.textContent = `留巡 ${summary.next_round_meters} · 释放 ${summary.released_meters} · 晚到回执 ${summary.deferred_receipts}`;
+    const records = packet.roster.map((row) => ({
+        meter: row.meter, sector: row.sector, grade: row.grade,
+        ticket: row.ticket, handoff_state: row.handoff_state,
+        recheck_night: row.recheck_night, reason: row.reason,
+    }));
+    renderTable(target, records, HANDOFF_COLUMNS, openRecord);
+    if (packet.deferred.length) {
+        const note = named('p', `晚到回执（留到下批复核，不改写本期分级）：${
+            packet.deferred.map((row) => `${row.ticket} → ${row.meter}`).join('、')}`, 'empty');
+        target.append(note);
+    }
+}
+
 function openRecord(record) {
     selectedRow = record;
     selection = 'record';
@@ -106,8 +131,9 @@ function renderEvidence() {
         byId('evidence-heading').textContent = '所选记录';
         byId('evidence-summary').textContent = '';
         const list = named('dl', undefined, 'record-details');
+        const labels = {...active.columns, ...HANDOFF_COLUMNS};
         Object.entries(selectedRow).forEach(([key, value]) => {
-            list.append(named('dt', active.columns[key] ?? key), named('dd', value));
+            list.append(named('dt', labels[key] ?? key), named('dd', value));
         });
         byId('stage-records').replaceChildren(list);
         return;
@@ -134,6 +160,7 @@ function render(snapshot) {
     byId('export').disabled = false;
     renderMetrics(snapshot.metrics);
     renderRows();
+    renderHandoff();
     renderEvidence();
     const chart = byId('chart');
     chart.replaceChildren();

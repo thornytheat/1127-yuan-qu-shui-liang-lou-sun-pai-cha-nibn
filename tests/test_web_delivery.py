@@ -39,6 +39,20 @@ def test_health_page_and_local_assets():
     assert client.get("/static/workbench.js").status_code == 200
 
 
+def test_handoff_roster_is_served_with_roster_panel_and_metrics():
+    client = application.test_client()
+    model = client.get("/api/overview").get_json()
+    assert "下班留巡" in model["metrics"] and "修复释放" in model["metrics"]
+    handoff = model["handoff"]
+    assert handoff["summary"]["next_round_meters"] == len(handoff["roster"])
+    assert {row["next_round"] for row in handoff["roster"]} == {True}
+    assert any(row["closed"] > row["cutoff"] for row in handoff["deferred"])
+    page = client.get("/").get_data(as_text=True)
+    assert "下一班巡检名单" in page and 'id="handoff"' in page
+    script = client.get("/static/workbench.js").get_data(as_text=True)
+    assert "renderHandoff" in script and "HANDOFF_COLUMNS" in script
+
+
 def test_repeated_scenario_has_the_same_run_fingerprint():
     client = application.test_client()
     first = client.post("/api/scenario", json={"capacity": 5}).get_json()

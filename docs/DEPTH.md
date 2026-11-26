@@ -12,6 +12,7 @@ AI/ML / 传统ML · 园区夜间水表异常聚类与巡检工单排序
 | M4 | 漏损筛查 | 压力修正与经验尾概率校准，按持续夜数、关阀余流及簇外距离分级 | `src/meterloss/loss_screen/scoring.py` `src/meterloss/loss_screen/contracts.py` `src/meterloss/loss_screen/service.py` | `tests/test_loss_screen.py` |
 | M5 | 巡检配次 | 显式优先队列和执勤区、听漏资质、阀门资质、步行和班内时间约束 | `src/meterloss/field_rounds/assignment.py` `src/meterloss/field_rounds/contracts.py` `src/meterloss/field_rounds/service.py` | `tests/test_field_rounds.py` |
 | M6 | 水量追溯 | 配次独立核验与工单回执对账，量化已确认损耗、召回和净节水量 | `src/meterloss/water_balance/audit.py` `src/meterloss/water_balance/contracts.py` `src/meterloss/water_balance/service.py` | `tests/test_water_balance.py` |
+| M7 | 交班名单 | 回执并回漏损分级形成下一班巡检名单，晚到回执延后复核，复测夜窗缺测或供压口径不同时不采信读数回落 | `src/meterloss/water_balance/handoff/handoff.py` `src/meterloss/water_balance/handoff/contracts.py` | `tests/test_shift_handoff.py` `tests/test_handoff_pipeline.py` |
 
 ## 边界案例
 
@@ -27,3 +28,6 @@ AI/ML / 传统ML · 园区夜间水表异常聚类与巡检工单排序
 | TRAP-52 | 水表簇 id 任意编号 | 按标签直接比 | 组合矩阵全局最优一对一 | `src/meterloss/consumption_clusters/medoids.py` | `tests/test_consumption_clusters.py::test_assignment_after_permutation` |
 | TRAP-53 | 请求同时带大流量表 | 重新计算批次尺度 | 冻结 medoid 和统计量 | `src/meterloss/consumption_clusters/medoids.py` | `tests/test_consumption_clusters.py::test_immutable_inference_score` |
 | TRAP-54 | 抄表策略版本更新 | 沿用旧签发摘要 | 源版本加入签名 | `src/meterloss/water_balance/audit.py` | `tests/test_water_balance.py::test_upstream_changes_dispatch_stamp` |
+| TRAP-61 | 回执晚到于复核截止 | 并入本期改写分级 | 截止分钟外回执整单延后，分级原样保留 | `src/meterloss/water_balance/handoff/handoff.py` | `tests/test_shift_handoff.py::test_late_receipt_is_deferred_and_does_not_change_current_grading` |
+| TRAP-62 | 无派单的同表回执 | 按回执直接计修复 | 要求回执落在本次巡检单且同分区，否则只留痕不释放 | `src/meterloss/water_balance/handoff/handoff.py` | `tests/test_shift_handoff.py::test_receipt_without_matching_dispatch_does_not_count_as_repair` |
+| TRAP-63 | 复测夜窗缺测或供压口径不同 | 凭单晚回落提前结案 | 修后复测夜窗起点须不早于修复时点，供压相对偏差超 10% 或余流仍达异常量级一律留巡 | `src/meterloss/water_balance/handoff/handoff.py` | `tests/test_shift_handoff.py::test_recheck_pressure_difference_blocks_release_even_when_rate_dropped` |

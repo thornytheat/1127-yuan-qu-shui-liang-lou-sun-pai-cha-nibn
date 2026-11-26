@@ -1,8 +1,8 @@
 .shell {display:grid;grid-template-columns:174px minmax(0,1fr);min-height:100vh;}
-.board {display:grid;grid-template-columns:minmax(0, 1fr) minmax(0, 1.3fr);grid-template-areas:"evidence signal" "decisions decisions";gap:16px;}
-.signal {grid-area:signal;} .decisions {grid-area:decisions;} .evidence {grid-area:evidence;}
-.masthead {border-style:dashed;} .masthead h1::before {content:"$ ";color:var(--accent);} .panel {border-style:dashed;} .kpi {border:0;border-left:3px solid var(--accent);background:transparent;} .rail button[aria-pressed="true"]::before {content:"> ";} .table-scroll {scrollbar-color:var(--accent) var(--surface);} 
-@media (max-width:1030px) {.board {grid-template-columns:minmax(0,1fr);grid-template-areas:"signal" "decisions" "evidence";}}
+.board {display:grid;grid-template-columns:minmax(0, 1fr) minmax(0, 1.3fr);grid-template-areas:"evidence signal" "decisions decisions" "handoff handoff";gap:16px;}
+.signal {grid-area:signal;} .decisions {grid-area:decisions;} .evidence {grid-area:evidence;} .handoff {grid-area:handoff;}
+.masthead {border-style:dashed;} .masthead h1::before {content:"$ ";color:var(--accent);} .panel {border-style:dashed;} .kpi {border:0;border-left:3px solid var(--accent);background:transparent;} .rail button[aria-pressed="true"]::before {content:"> ";} .table-scroll {scrollbar-color:var(--accent) var(--surface);}
+@media (max-width:1030px) {.board {grid-template-columns:minmax(0,1fr);grid-template-areas:"signal" "decisions" "handoff" "evidence";}}
 @media (max-width:710px) {
     .shell {grid-template-columns:minmax(0,1fr);}
     .rail {padding:10px 14px;border-radius:0;}

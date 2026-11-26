@@ -70,5 +70,29 @@
     "night_minutes": 90,
     "pressure": 430,
     "reviewer": "夜巡负责人"
+  },
+  {
+    "ticket": "XH-120",
+    "meter": "ZF-806",
+    "zone": "南立管",
+    "closed": 8842,
+    "fault": false,
+    "before_rate": 7.2,
+    "after_rate": 2.1,
+    "night_minutes": 90,
+    "pressure": 430,
+    "reviewer": "夜巡负责人"
+  },
+  {
+    "ticket": "XH-121",
+    "meter": "ZF-808",
+    "zone": "中水站",
+    "closed": 9015,
+    "fault": true,
+    "before_rate": 12.4,
+    "after_rate": 2.2,
+    "night_minutes": 90,
+    "pressure": 430,
+    "reviewer": "夜巡负责人"
   }
 ]
