@@ -1,0 +1,74 @@
+[
+  {
+    "ticket": "XH-114",
+    "meter": "ZF-801",
+    "zone": "南立管",
+    "closed": 8800,
+    "fault": true,
+    "before_rate": 9.8,
+    "after_rate": 2.4,
+    "night_minutes": 90,
+    "pressure": 430,
+    "reviewer": "夜巡负责人"
+  },
+  {
+    "ticket": "XH-115",
+    "meter": "ZF-802",
+    "zone": "窑炉间",
+    "closed": 8807,
+    "fault": false,
+    "before_rate": 10.07,
+    "after_rate": 2.61,
+    "night_minutes": 90,
+    "pressure": 430,
+    "reviewer": "夜巡负责人"
+  },
+  {
+    "ticket": "XH-116",
+    "meter": "ZF-804",
+    "zone": "南立管",
+    "closed": 8814,
+    "fault": true,
+    "before_rate": 10.34,
+    "after_rate": 2.82,
+    "night_minutes": 90,
+    "pressure": 430,
+    "reviewer": "夜巡负责人"
+  },
+  {
+    "ticket": "XH-117",
+    "meter": "ZF-810",
+    "zone": "窑炉间",
+    "closed": 8821,
+    "fault": true,
+    "before_rate": 10.610000000000001,
+    "after_rate": 3.03,
+    "night_minutes": 90,
+    "pressure": 430,
+    "reviewer": "夜巡负责人"
+  },
+  {
+    "ticket": "XH-118",
+    "meter": "ZF-812",
+    "zone": "窑炉间",
+    "closed": 8828,
+    "fault": false,
+    "before_rate": 10.88,
+    "after_rate": 3.2399999999999998,
+    "night_minutes": 90,
+    "pressure": 430,
+    "reviewer": "夜巡负责人"
+  },
+  {
+    "ticket": "XH-119",
+    "meter": "ZF-807",
+    "zone": "窑炉间",
+    "closed": 8835,
+    "fault": false,
+    "before_rate": 11.15,
+    "after_rate": 3.45,
+    "night_minutes": 90,
+    "pressure": 430,
+    "reviewer": "夜巡负责人"
+  }
+]

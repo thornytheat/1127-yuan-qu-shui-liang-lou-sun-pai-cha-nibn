@@ -1,0 +1,22 @@
+[
+  {
+    "name": "隔离班备勤",
+    "sick": [
+      "听漏一组"
+    ],
+    "unavailable": [],
+    "cap": 6,
+    "walkway": {
+      "南立管>中水站": 29
+    }
+  },
+  {
+    "name": "中水站检修封区",
+    "sick": [],
+    "unavailable": [
+      "中水站"
+    ],
+    "cap": 7,
+    "walkway": {}
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "sector": "南立管",
+    "night": "第6夜",
+    "before_l": 120031,
+    "after_l": 125851,
+    "storage_at_start": 370,
+    "storage_at_end": 520,
+    "exempted_l": 97,
+    "sample_coverage": 0.98,
+    "edition": 1,
+    "known_at": 8841
+  },
+  {
+    "sector": "南立管",
+    "night": "第7夜",
+    "before_l": 120031,
+    "after_l": 125956,
+    "storage_at_start": 370,
+    "storage_at_end": 538,
+    "exempted_l": 97,
+    "sample_coverage": 0.98,
+    "edition": 1,
+    "known_at": 8841
+  },
+  {
+    "sector": "窑炉间",
+    "night": "第6夜",
+    "before_l": 150031,
+    "after_l": 155851,
+    "storage_at_start": 370,
+    "storage_at_end": 520,
+    "exempted_l": 12,
+    "sample_coverage": 0.98,
+    "edition": 1,
+    "known_at": 8841
+  },
+  {
+    "sector": "窑炉间",
+    "night": "第7夜",
+    "before_l": 150031,
+    "after_l": 155956,
+    "storage_at_start": 370,
+    "storage_at_end": 538,
+    "exempted_l": 12,
+    "sample_coverage": 0.98,
+    "edition": 1,
+    "known_at": 8841
+  },
+  {
+    "sector": "中水站",
+    "night": "第6夜",
+    "before_l": 180031,
+    "after_l": 185851,
+    "storage_at_start": 370,
+    "storage_at_end": 520,
+    "exempted_l": 12,
+    "sample_coverage": 0.98,
+    "edition": 1,
+    "known_at": 8841
+  },
+  {
+    "sector": "中水站",
+    "night": "第7夜",
+    "before_l": 180031,
+    "after_l": 185956,
+    "storage_at_start": 370,
+    "storage_at_end": 538,
+    "exempted_l": 12,
+    "sample_coverage": 0.74,
+    "edition": 1,
+    "known_at": 8841
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "at": 8790,
+  "recheck": 9000,
+  "policy": {
+    "version": "W-26A",
+    "minimum_rate": 1.1,
+    "minimum_persistence": 2,
+    "pressure_anchor": 420.0,
+    "isolation_alarm": 5.5,
+    "calibration_cap": 0.4,
+    "cohort_reject": 5.0,
+    "minimum_samples": 4
+  },
+  "walks": {
+    "南立管>窑炉间": 12,
+    "南立管>中水站": 15,
+    "窑炉间>南立管": 12,
+    "窑炉间>中水站": 18,
+    "中水站>南立管": 15,
+    "中水站>窑炉间": 18
+  },
+  "crews": [
+    {
+      "name": "听漏一组",
+      "zones": [
+        "南立管",
+        "窑炉间",
+        "中水站"
+      ],
+      "hours": 143,
+      "acoustic": true,
+      "valve": true,
+      "max_cases": 3,
+      "base": "南立管",
+      "starts": 8760
+    },
+    {
+      "name": "抄表二组",
+      "zones": [
+        "南立管",
+        "窑炉间",
+        "中水站"
+      ],
+      "hours": 120,
+      "acoustic": false,
+      "valve": false,
+      "max_cases": 5,
+      "base": "窑炉间",
+      "starts": 8780
+    },
+    {
+      "name": "阀门三组",
+      "zones": [
+        "窑炉间",
+        "中水站"
+      ],
+      "hours": 132,
+      "acoustic": true,
+      "valve": true,
+      "max_cases": 3,
+      "base": "中水站",
+      "starts": 8770
+    }
+  ]
+}

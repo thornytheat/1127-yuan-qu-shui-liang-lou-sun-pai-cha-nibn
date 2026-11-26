@@ -1,0 +1,167 @@
+[
+  {
+    "key": "ZF-801",
+    "sector": "南立管",
+    "overnight_lpm": 0.925,
+    "daylight_lpm": 7.8,
+    "weekday_load": 0.276,
+    "pressure": 403,
+    "commercial": 0.15,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-802",
+    "sector": "窑炉间",
+    "overnight_lpm": 3.55,
+    "daylight_lpm": 30.6,
+    "weekday_load": 0.484,
+    "pressure": 458,
+    "commercial": 0.45999999999999996,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-803",
+    "sector": "中水站",
+    "overnight_lpm": 6.175,
+    "daylight_lpm": 53.4,
+    "weekday_load": 0.692,
+    "pressure": 513,
+    "commercial": 0.77,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-804",
+    "sector": "南立管",
+    "overnight_lpm": 1.15,
+    "daylight_lpm": 9.6,
+    "weekday_load": 0.312,
+    "pressure": 385,
+    "commercial": 0.15,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-805",
+    "sector": "窑炉间",
+    "overnight_lpm": 3.775,
+    "daylight_lpm": 32.4,
+    "weekday_load": 0.52,
+    "pressure": 440,
+    "commercial": 0.45999999999999996,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-806",
+    "sector": "南立管",
+    "overnight_lpm": 6.55,
+    "daylight_lpm": 52.2,
+    "weekday_load": 0.752,
+    "pressure": 501,
+    "commercial": 0.77,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-807",
+    "sector": "窑炉间",
+    "overnight_lpm": 1.0,
+    "daylight_lpm": 8.4,
+    "weekday_load": 0.288,
+    "pressure": 409,
+    "commercial": 0.15,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-808",
+    "sector": "中水站",
+    "overnight_lpm": 3.625,
+    "daylight_lpm": 31.2,
+    "weekday_load": 0.496,
+    "pressure": 464,
+    "commercial": 0.45999999999999996,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-809",
+    "sector": "南立管",
+    "overnight_lpm": 6.25,
+    "daylight_lpm": 48.0,
+    "weekday_load": 0.704,
+    "pressure": 483,
+    "commercial": 0.77,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-810",
+    "sector": "窑炉间",
+    "overnight_lpm": 0.7,
+    "daylight_lpm": 10.2,
+    "weekday_load": 0.24,
+    "pressure": 391,
+    "commercial": 0.15,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-811",
+    "sector": "南立管",
+    "overnight_lpm": 3.475,
+    "daylight_lpm": 30.0,
+    "weekday_load": 0.472,
+    "pressure": 452,
+    "commercial": 0.45999999999999996,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-812",
+    "sector": "窑炉间",
+    "overnight_lpm": 6.1,
+    "daylight_lpm": 52.8,
+    "weekday_load": 0.68,
+    "pressure": 507,
+    "commercial": 0.77,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-813",
+    "sector": "中水站",
+    "overnight_lpm": 1.075,
+    "daylight_lpm": 240,
+    "weekday_load": 0.3,
+    "pressure": 415,
+    "commercial": 0.15,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-814",
+    "sector": "南立管",
+    "overnight_lpm": 3.7,
+    "daylight_lpm": 31.8,
+    "weekday_load": 0.508,
+    "pressure": 434,
+    "commercial": 0.45999999999999996,
+    "trusted": true,
+    "known_at": 700
+  },
+  {
+    "key": "ZF-815",
+    "sector": "窑炉间",
+    "overnight_lpm": 6.325,
+    "daylight_lpm": 48.6,
+    "weekday_load": 0.716,
+    "pressure": 489,
+    "commercial": 0.77,
+    "trusted": true,
+    "known_at": 700
+  }
+]

@@ -1,0 +1,11 @@
+:root {
+    color-scheme: dark;
+    --bg: #10241c; --background: var(--bg);
+    --surface: #172e22; --ink: #eefff3; --muted: #99c5a7;
+    --accent: #a7f687; --border: #3b6548; --wash: #20462b;
+    --rail: #0c1710; --on-rail: #d3edcf; --on-accent: #15221a;
+    --error: #ffc0b5;
+    --display: "Menlo",monospace; --type: "SFMono-Regular",monospace;
+    --radius: 2px; --gutter: 25px; --title: 30px;
+    --base: 13px;
+}

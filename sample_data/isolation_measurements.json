@@ -1,0 +1,258 @@
+{
+  "pipes": [
+    {
+      "sector": "南立管",
+      "parent": "进水",
+      "child": "总分",
+      "material": "球墨铸铁",
+      "age_years": 8,
+      "prior": 0.1
+    },
+    {
+      "sector": "南立管",
+      "parent": "总分",
+      "child": "北立",
+      "material": "球墨铸铁",
+      "age_years": 8,
+      "prior": 0.13
+    },
+    {
+      "sector": "南立管",
+      "parent": "北立",
+      "child": "缓压支路",
+      "material": "锌管",
+      "age_years": 8,
+      "prior": 0.3
+    },
+    {
+      "sector": "南立管",
+      "parent": "总分",
+      "child": "蓄水井",
+      "material": "PE",
+      "age_years": 8,
+      "prior": 0.12
+    },
+    {
+      "sector": "南立管",
+      "parent": "蓄水井",
+      "child": "东支线",
+      "material": "PE",
+      "age_years": 8,
+      "prior": 0.17
+    },
+    {
+      "sector": "南立管",
+      "parent": "北立",
+      "child": "支流南",
+      "material": "钢管",
+      "age_years": 8,
+      "prior": 0.18
+    },
+    {
+      "sector": "窑炉间",
+      "parent": "进水",
+      "child": "总分",
+      "material": "球墨铸铁",
+      "age_years": 13,
+      "prior": 0.1
+    },
+    {
+      "sector": "窑炉间",
+      "parent": "总分",
+      "child": "北立",
+      "material": "球墨铸铁",
+      "age_years": 13,
+      "prior": 0.13
+    },
+    {
+      "sector": "窑炉间",
+      "parent": "北立",
+      "child": "缓压支路",
+      "material": "锌管",
+      "age_years": 13,
+      "prior": 0.3
+    },
+    {
+      "sector": "窑炉间",
+      "parent": "总分",
+      "child": "蓄水井",
+      "material": "PE",
+      "age_years": 13,
+      "prior": 0.12
+    },
+    {
+      "sector": "窑炉间",
+      "parent": "蓄水井",
+      "child": "东支线",
+      "material": "PE",
+      "age_years": 13,
+      "prior": 0.17
+    },
+    {
+      "sector": "窑炉间",
+      "parent": "北立",
+      "child": "支流南",
+      "material": "钢管",
+      "age_years": 13,
+      "prior": 0.18
+    },
+    {
+      "sector": "中水站",
+      "parent": "进水",
+      "child": "总分",
+      "material": "球墨铸铁",
+      "age_years": 18,
+      "prior": 0.1
+    },
+    {
+      "sector": "中水站",
+      "parent": "总分",
+      "child": "北立",
+      "material": "球墨铸铁",
+      "age_years": 18,
+      "prior": 0.13
+    },
+    {
+      "sector": "中水站",
+      "parent": "北立",
+      "child": "缓压支路",
+      "material": "锌管",
+      "age_years": 18,
+      "prior": 0.3
+    },
+    {
+      "sector": "中水站",
+      "parent": "总分",
+      "child": "蓄水井",
+      "material": "PE",
+      "age_years": 18,
+      "prior": 0.12
+    },
+    {
+      "sector": "中水站",
+      "parent": "蓄水井",
+      "child": "东支线",
+      "material": "PE",
+      "age_years": 18,
+      "prior": 0.17
+    },
+    {
+      "sector": "中水站",
+      "parent": "北立",
+      "child": "支流南",
+      "material": "钢管",
+      "age_years": 18,
+      "prior": 0.18
+    }
+  ],
+  "trials": [
+    {
+      "name": "南立管夜阀-A",
+      "sector": "南立管",
+      "interrupted": "北立",
+      "before_lpm": 18,
+      "after_lpm": 10.0,
+      "reliable": true,
+      "observed": 8810
+    },
+    {
+      "name": "南立管夜阀-B",
+      "sector": "南立管",
+      "interrupted": "缓压支路",
+      "before_lpm": 16,
+      "after_lpm": 9.0,
+      "reliable": true,
+      "observed": 8830
+    },
+    {
+      "name": "南立管夜阀-C",
+      "sector": "南立管",
+      "interrupted": "支流南",
+      "before_lpm": 12,
+      "after_lpm": 11.2,
+      "reliable": true,
+      "observed": 8880
+    },
+    {
+      "name": "南立管夜阀-D",
+      "sector": "南立管",
+      "interrupted": "蓄水井",
+      "before_lpm": 10,
+      "after_lpm": 9.5,
+      "reliable": true,
+      "observed": 8890
+    },
+    {
+      "name": "窑炉间夜阀-A",
+      "sector": "窑炉间",
+      "interrupted": "北立",
+      "before_lpm": 19,
+      "after_lpm": 14.0,
+      "reliable": true,
+      "observed": 8810
+    },
+    {
+      "name": "窑炉间夜阀-B",
+      "sector": "窑炉间",
+      "interrupted": "缓压支路",
+      "before_lpm": 17,
+      "after_lpm": 13.0,
+      "reliable": true,
+      "observed": 8830
+    },
+    {
+      "name": "窑炉间夜阀-C",
+      "sector": "窑炉间",
+      "interrupted": "支流南",
+      "before_lpm": 13,
+      "after_lpm": 12.2,
+      "reliable": true,
+      "observed": 8880
+    },
+    {
+      "name": "窑炉间夜阀-D",
+      "sector": "窑炉间",
+      "interrupted": "蓄水井",
+      "before_lpm": 11,
+      "after_lpm": 10.5,
+      "reliable": true,
+      "observed": 8890
+    },
+    {
+      "name": "中水站夜阀-A",
+      "sector": "中水站",
+      "interrupted": "北立",
+      "before_lpm": 20,
+      "after_lpm": 18.0,
+      "reliable": true,
+      "observed": 8810
+    },
+    {
+      "name": "中水站夜阀-B",
+      "sector": "中水站",
+      "interrupted": "缓压支路",
+      "before_lpm": 18,
+      "after_lpm": 17.0,
+      "reliable": true,
+      "observed": 8830
+    },
+    {
+      "name": "中水站夜阀-C",
+      "sector": "中水站",
+      "interrupted": "支流南",
+      "before_lpm": 14,
+      "after_lpm": 13.2,
+      "reliable": false,
+      "observed": 8880
+    },
+    {
+      "name": "中水站夜阀-D",
+      "sector": "中水站",
+      "interrupted": "蓄水井",
+      "before_lpm": 12,
+      "after_lpm": 11.5,
+      "reliable": true,
+      "observed": 8890
+    }
+  ]
+}
